@@ -17,10 +17,9 @@ nav {
 .countries{
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  
- 
-  
 }
+
+  
 .country{
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
