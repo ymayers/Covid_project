@@ -1,0 +1,27 @@
+.header-container{
+  margin-top: 5px;
+  text-align: center;
+  background-color: blueviolet;
+  height: 6em
+}
+
+.header {
+  color: white;
+  font-size: 3em;
+}
+
+nav {
+  font-size: 1em;
+}
+
+.countries{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  
+ 
+  
+}
+.country{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
