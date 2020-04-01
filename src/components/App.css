@@ -24,3 +24,12 @@ nav {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
 }
+
+.country-link{
+  text-decoration: none;
+  color: black;
+}
+.home_link{
+  text-decoration: none;
+  color: black;
+}
