@@ -47,3 +47,8 @@ nav {
   text-decoration: none;
   color: black;
 }
+
+.details-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr
+}
