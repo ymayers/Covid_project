@@ -1,44 +1,23 @@
-// import React, { Component } from 'react'
-
-// class CountryDetails extends Component {
-//   constructor(props) {
-//     super(props)
-// const cases = props.match.params.TotalConfirmed
-
-//   }
-
-//   render() {
-//     return (
-//       <p>{cases}</p>
-//     )
-//   }
-// }
-
-// export default CountryDetails
-
 import React, { Component } from "react";
 
-class CountryDetails extends Component {
-  // constructor(props) {
-  //   super();
+//displays number of covid-19 cases on separate page 
+//in variable nation - idx is the country name in the url
+//it is being matched to the prop with same country name using the .find method
 
-  //   console.log(this.props);
-  // }
+//need to build this out
+//would like to use several storybook components here 
+
+class CountryDetails extends Component {
 
   render() {
     const nation = this.props.match.params.idx;
-    console.log(nation);
     const countryInfo = this.props.cases.find(item =>  nation === item.Country)
-    console.log(this.props.cases);
-console.log(countryInfo)
+ 
     return (
      
-      //   <div className="cases">
-      // <div className="country-name">
-      //   {props.country}
       <div>
     <div className="details-name"><p>{countryInfo.Country}</p></div>
-          <div className="details-confirmed"><p>{countryInfo.TotalConfirmed}</p></div>
+          <div className="details-confirmed"><h1></h1><p>{countryInfo.TotalConfirmed}</p></div>
           </div>
     );
   }

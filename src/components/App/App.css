@@ -1,15 +1,25 @@
 .header-container {
-  margin-top: 5px;
+  margin: 0 auto;
+
   text-align: center;
   background-color: blueviolet;
-  
   height: 6em;
+  position: sticky;
+  width: 100%;
+ 
 }
 
 .header {
   color: white;
   font-size: 3em;
   border: 2px solid white;
+
+}
+
+.footer{
+  width: 100%;
+  text-align: center;
+  background-color: blueviolet;
   
 }
 
@@ -19,14 +29,14 @@ nav {
   color: white;
 }
 
-.countries {
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
+.country-container{
+  margin-top: 2em;
 }
 
 .country {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
+  
 }
 
 .country-link {
