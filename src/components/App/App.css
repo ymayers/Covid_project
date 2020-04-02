@@ -1,35 +1,39 @@
-.header-container{
+.header-container {
   margin-top: 5px;
   text-align: center;
   background-color: blueviolet;
-  height: 6em
+  
+  height: 6em;
 }
 
 .header {
   color: white;
   font-size: 3em;
+  border: 2px solid white;
+  
 }
 
 nav {
+  margin-top: .50em;
   font-size: 1em;
+  color: white;
 }
 
-.countries{
+.countries {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
-  
-.country{
+.country {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
-.country-link{
+.country-link {
   text-decoration: none;
   color: black;
 }
-.home_link{
+.home_link {
   text-decoration: none;
   color: black;
 }
