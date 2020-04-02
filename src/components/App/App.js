@@ -6,6 +6,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Home from "./Home";
 import CountryDetails from "./CountryDetails";
+import name from "../../data/world.json";
 
 class App extends React.Component {
   constructor(props) {
@@ -34,7 +35,7 @@ class App extends React.Component {
           <Route
             path="/details/:idx"
             render={props => (
-              <CountryDetails cases={this.state.countries} {...props} />
+              <CountryDetails cases={this.state.countries} image={name} {...props} />
             )}
           />
            <Footer/>
