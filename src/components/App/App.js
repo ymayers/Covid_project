@@ -23,18 +23,23 @@ class App extends React.Component {
   //renders <Home/> countries onto homepage - needs to be refactored?
   //second block is supposed to render the number of cases by country on a different page but is currently showing on the home page...
   //should I be using componentDidUpdate - if so, where? I know I need it so that the number of cases doesn't show until click.
-
+// : in route tells you that it's a variable
   render() {
     console.log(this.state);
     return (
       <div>
         <Header />
         <main>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" render={props => (<Home countries={this.state.countries} {...props}/>)} />
           {/* not absolutely sure how to pass router props to CountryDetails component in this form when I need to map through and get the data or have Home component pass the props */}
-          {/* <Route path="/details/:idx" render={(props) => < CountryDetails {...props} />}/> */}
-          
-          <div className="countries">
+          <Route
+            path="/details/:idx"
+            render={props => (
+              <CountryDetails cases={this.state.countries} {...props} />
+            )}
+          />
+
+          {/* <div className="countries">
             {this.state.countries.map((countries, idx) => (
               <Home
                 className="country"
@@ -43,11 +48,11 @@ class App extends React.Component {
                 cases={countries.TotalConfirmed}
               />
             ))}
-          </div>
-          <Route path="/details/:idx" component={CountryDetails} />
+          </div> */}
+          {/* <Route path="/details/:idx" component={CountryDetails} /> */}
 
-          {/* /*countrydetails component - renders cases and country names - needs to render on separate page - need componentDidUpdate?*/ }
-          <div className="cases">
+          {/* /*countrydetails component - renders cases and country names - needs to render on separate page - need componentDidUpdate?*/}
+          {/* <div className="cases">
             {this.state.countries.map((countries, idx) => (
               <CountryDetails
                 key={idx}
@@ -56,8 +61,7 @@ class App extends React.Component {
                 cases={countries.TotalConfirmed}
               />
             ))}
-          </div>
-    
+          </div> */}
 
           {/* <CountryDetails
               className="cases"
