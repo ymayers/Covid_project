@@ -2,24 +2,21 @@ import React, { Component } from "react";
 
 //displays number of covid-19 cases on separate page
 
-
 //need to build this out
 //would like to use several storybook components here
+//when I refresh the page - code breaks - how can I prevent this? Redirect?
 
 class CountryDetails extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     //variable nation - idx is the country name in the url
     //it is being matched to the prop with same country name using the .find method
+    //to find countryCode - giving access to json file objects
+    //to get image by countryCode
+
     const nation = this.props.match.params.idx;
     const countryInfo = this.props.cases.find(item => nation === item.Country);
-    //to find countryCode - giving access to json file objects
     const countryCode = this.props.image.find(name => nation === name.name);
-    //to get image by countryCode
-    const images = require.context(`../../data/flags-large`, true);
+    const images = require.context(`../../data/flags-large`);
     let img = images(`./${countryCode.alpha2}.png`);
 
     return (
