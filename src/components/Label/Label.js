@@ -4,11 +4,10 @@ import "./Label.css";
 
 const Label = props => (
   <>
-   <div>
-   <select className={props.type}>
-     <option>Label</option>
-   </select> 
- </div>
+  
+    <details className={props.type}><summary>{props.label}</summary>
+       
+       </details> 
 </>
 );
 
