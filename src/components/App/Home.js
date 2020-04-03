@@ -14,7 +14,7 @@ class Home extends Component {
           <Link key={idx} to={`/details/${country.Country}`} className="country-link">
             {country.Country}
           </Link>
-        ))}/>
+        ))}
         </div>
         </div>
     );

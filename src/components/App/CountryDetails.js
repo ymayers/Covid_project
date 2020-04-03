@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Button from "../Button/Button";
 import Label from "../Label/Label";
+import Section from "../Section/Section";
 
 //displays number of covid-19 cases on separate page
 
@@ -23,19 +24,14 @@ class CountryDetails extends Component {
 
     return (
       <div className="details-container">
-        <div className="details-name">
-          <img src={img} alt="flag" />
-          <h1>{countryInfo.Country}</h1>
-        </div>
+        <div className="section-container">
+       <Section type="section1" label={countryInfo.Country} img={img} alt="flag"/>
+       </div>
         <div className="details-confirmed">
-          <h2>Number of Confirmed COVID-19 Cases</h2>
-          <p>{countryInfo.TotalConfirmed}</p>
-          <h2>Total Recovered</h2>
-          <p>{countryInfo.TotalRecovered}</p>
-          <h2>Total Deaths</h2>
-          <p>{countryInfo.TotalDeaths}</p>
+        <Label type="arrow" label="Number of Confirmed Cases" info={countryInfo.TotalConfirmed} />
+        <Label type="arrow" label="Total Recovered" info={countryInfo.TotalRecovered} />
+        <Label type="arrow" label="Total Deaths" info={countryInfo.TotalDeaths} />
           <Button label="More Info" />
-          <Label type="arrow" />
         </div>
       </div>
     );

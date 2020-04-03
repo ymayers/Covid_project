@@ -1,0 +1,27 @@
+.summary {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.arrow {
+ 
+  margin: 1em;
+  padding: 1em;
+  
+  
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+.arrow-info{
+  font-size: 1em;
+  font-weight: bold;
+  
+}
+
+.first {
+  border: none;
+  background-color: blue;
+  color: blue;
+}

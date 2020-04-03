@@ -52,3 +52,8 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr
 }
+
+.section-container{
+  margin: 1em 0 1em 3em;
+
+}
