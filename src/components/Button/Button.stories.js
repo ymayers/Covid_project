@@ -4,4 +4,5 @@ import Button from "./Button";
 
 
 
-storiesOf("Button", module).add("Primary", () => <Button label="Primary" />)
+storiesOf("Button", module).add("Primary", () => <Button type="home" />)
+  .add("Home", () => <Button type="home" />);

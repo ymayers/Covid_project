@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import Button from "../Button/Button";
 
 
 //displays header and link to home 
@@ -8,10 +9,13 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="header-container">
-      <div className="header">World COVID-19 Information
-      </div>
-  <Link to="/" className="home_link"><nav className="nav">Home</nav></Link>
       
+      <div className="header">»W⊗rld CØVïÐ-19 Information«
+      </div>
+      
+      <div className="home-container">
+      <Link to="/" className="home_link"><nav className="nav"><Button type="home" label="Home"/></nav></Link>
+      </div>
       </div>
   )
 }

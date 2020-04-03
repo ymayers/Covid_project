@@ -1,59 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 .header-container {
-  margin: 0 auto;
-
+  
+  padding-top: 1.5em;
   text-align: center;
-  background-color: blueviolet;
-  height: 6em;
+  
+  background-color: slategray;
+  height: 6.5em;
   position: sticky;
   width: 100%;
- 
-}
-
-.header {
-  color: white;
-  font-size: 3em;
-  border: 2px solid white;
-
-}
-
-.footer{
-  width: 100%;
-  text-align: center;
-  background-color: blueviolet;
   
 }
 
+
+.header {
+  margin-top: .5em;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  text-shadow: 2px brown;
+  height: 60%;
+  color: white;
+  font-size: 2.5em;
+  font-weight: bold;
+  
+  font-family: Special Elite, sans-serif;
+  
+}
+.home-container{
+  margin-top: 3em;
+}
+
+.footer {
+  width: 100%;
+  color: whitesmoke;
+  text-align: center;
+  background-color: slategray;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+ 
+}
+
 nav {
-  margin-top: .50em;
+  margin-top: 0.5em;
   font-size: 1em;
   color: white;
 }
 
-.country-container{
+.country-container {
   margin-top: 2em;
 }
 
 .country {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  
 }
-
+/*refactor to .link and apply to all links*/
 .country-link {
+  
   text-decoration: none;
   color: black;
-}
-.home_link {
-  text-decoration: none;
-  color: black;
+  margin: 0.3em;
+  font-family: Special Elite, sans-serif;
 }
 
-.details-container{
+.details-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr
+  grid-template-columns: 33% 1fr 1fr;
 }
 
-.section-container{
+.section-container {
   margin: 1em 0 1em 3em;
-
+}
+.cdc {
+  text-decoration: none;
+  color: black;
 }
