@@ -5,7 +5,7 @@
 
   background-color: slategray;
   height: 6.5em;
-  
+
   width: 100%;
 }
 
@@ -26,12 +26,12 @@
 
 .footer {
   margin-top: 3px;
-  padding-top: .25em;
+  padding-top: 0.25em;
   font-family: Special Elite, sans-serif;
   width: 100%;
   color: whitesmoke;
   text-align: center;
-  background: linear-gradient( slategray white) ;
+  background-image: linear-gradient(to bottom, white, slategray);
   position: sticky;
   left: 0;
   bottom: 0;
@@ -63,6 +63,9 @@ nav {
 .details-container {
   display: grid;
   grid-template-columns: 33% 1fr 1fr;
+  margin: 5em 0;
+  padding: 5em;
+  border: 1px solid slategray;
 }
 
 .section-container {
@@ -71,4 +74,55 @@ nav {
 .cdc {
   text-decoration: none;
   color: black;
+}
+
+/*For iPhone*/
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .header {
+    font-size: 1.75em;
+  }
+
+  .home-container {
+    margin-top: 1.75em;
+  }
+
+  .country {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .country-link {
+    font-size: 0.75em;
+    margin: 0.5em;
+  }
+  .details-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 5em 0;
+    margin-top: 5em;
+  }
+
+  .section-container {
+    margin: 0 auto;
+  }
+  .footer {
+    position: fixed;
+  }
+
+}
+
+/*For iPad*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .details-container {
+    grid-template-columns: 45% 1fr;
+    padding: 5em 0;
+    margin-top: 5em;
+  }
+  .section-container {
+    margin: 0 auto;
+  }
+
+  .footer {
+    position: fixed;
+  }
 }

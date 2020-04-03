@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Button from "../Button/Button";
 import Label from "../Label/Label";
 import Section from "../Section/Section";
 import { Link } from "react-router-dom";
