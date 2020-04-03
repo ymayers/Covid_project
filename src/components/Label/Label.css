@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+
 .summary {
   font-size: 1.5em;
   font-weight: bold;
+  font-family: Special Elite, sans-serif;
+  color: darkslategray;
 }
 
 .arrow {
@@ -17,6 +22,7 @@
 .arrow-info{
   font-size: 1em;
   font-weight: bold;
+  font-family: Special Elite, sans-serif;
   
 }
 

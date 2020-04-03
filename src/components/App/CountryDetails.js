@@ -63,7 +63,7 @@ class CountryDetails extends Component {
             label="Total Deaths"
             info={<Section type="section3" label={countryInfo.TotalDeaths} />}
           />
-          <Button label="More Info" type="info" />
+          
           <Link className="cdc" to={cdcUrl}>
             {" "}
             {<Section type="section2" label="CDC" />}

@@ -1,15 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+
 .section1 {
+  color: darkslategray;
   padding: 1em;
   display: flexbox;
   height: 8em;
   width: 35%;
-  background-color: rgb(255, 231, 231);
+  background-color: rgba(211, 211, 211, 0.746);
   border: 1px solid black;
-  box-shadow: 5px 0px 0 5px lightgray inset;
+  box-shadow: 5px 0px 0 5px whitesmoke inset;
   font-size: 2em;
   font-weight: bold;
   text-align: center;
   border-radius: 6px;
+  font-family: Special Elite, sans-serif;
 }
 
 .section-container {
@@ -17,26 +22,30 @@
 }
 
 .section2 {
+  color: darkslategray;
   padding: .5em;
   display: flexbox;
   height: 1em;
   width: 35%;
-  background-color: rgb(251, 209, 209);
-  border: 1.5px solid brown;
+  background-color: rgba(211, 211, 211, 0.746);
+  border: 1.25px solid darkslategray;
   font-size: 1em;
   font-weight: bold;
   text-align: center;
-  border-radius: 30%;
+  border-radius: 15%;
+  font-family: Special Elite, sans-serif;
 }
 .section3 {
+  color: darkslategray;
   padding: .5em;
   display: flexbox;
   height: 1em;
-  width: 20%;
+  width: 10%;
   background-color: rgb(251, 209, 209);
-  border: 1px solid brown;
+  border: 1px solid darkslategray;;
   font-size: 1em;
   font-weight: bold;
   text-align: center;
-  border-radius: 30%;
+  border-radius: 85%;
+  font-family: Special Elite, sans-serif;
 }

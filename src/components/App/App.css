@@ -1,44 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 .header-container {
-  
-  padding-top: 1.5em;
+  padding-top: 2em;
   text-align: center;
-  
+
   background-color: slategray;
   height: 6.5em;
-  position: sticky;
-  width: 100%;
   
+  width: 100%;
 }
 
-
 .header {
-  margin-top: .5em;
+  margin-top: 0.25em;
   width: 100%;
-  position: fixed;
   top: 0;
   text-shadow: 2px brown;
-  height: 60%;
+  height: 30%;
   color: white;
   font-size: 2.5em;
   font-weight: bold;
-  
   font-family: Special Elite, sans-serif;
-  
 }
-.home-container{
-  margin-top: 3em;
+.home-container {
+  margin-top: 1em;
 }
 
 .footer {
+  margin-top: 3px;
+  padding-top: .25em;
+  font-family: Special Elite, sans-serif;
   width: 100%;
   color: whitesmoke;
   text-align: center;
-  background-color: slategray;
-  position: fixed;
+  background: linear-gradient( slategray white) ;
+  position: sticky;
   left: 0;
   bottom: 0;
- 
+  height: 2em;
 }
 
 nav {
@@ -57,7 +54,6 @@ nav {
 }
 /*refactor to .link and apply to all links*/
 .country-link {
-  
   text-decoration: none;
   color: black;
   margin: 0.3em;
