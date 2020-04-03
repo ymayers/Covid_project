@@ -29,13 +29,13 @@ class CountryDetails extends Component {
         </div>
         <div className="details-confirmed">
           <h2>Number of Confirmed COVID-19 Cases</h2>
-           <p>{countryInfo.TotalConfirmed}</p>
+          <p>{countryInfo.TotalConfirmed}</p>
           <h2>Total Recovered</h2>
           <p>{countryInfo.TotalRecovered}</p>
           <h2>Total Deaths</h2>
           <p>{countryInfo.TotalDeaths}</p>
           <Button label="More Info" />
-          <Label type="arrow"/>
+          <Label type="arrow" />
         </div>
       </div>
     );
