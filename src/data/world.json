@@ -88,7 +88,7 @@
   },
   { "id": 184, "name": "Cook Islands", "alpha2": "ck", "alpha3": "cok" },
   { "id": 188, "name": "Costa Rica", "alpha2": "cr", "alpha3": "cri" },
-  { "id": 384, "name": "Cote d'Ivoire", "alpha2": "ci", "alpha3": "civ" },
+  { "id": 384, "name": "Côte d'Ivoire", "alpha2": "ci", "alpha3": "civ" },
   { "id": 191, "name": "Croatia", "alpha2": "hr", "alpha3": "hrv" },
   { "id": 192, "name": "Cuba", "alpha2": "cu", "alpha3": "cub" },
   { "id": 531, "name": "Curaçao", "alpha2": "cw", "alpha3": "cuw" },
@@ -177,11 +177,11 @@
   { "id": 296, "name": "Kiribati", "alpha2": "ki", "alpha3": "kir" },
   {
     "id": 408,
-    "name": "Korea (Democratic People's Republic of)",
+    "name": "Korea (North)",
     "alpha2": "kp",
     "alpha3": "prk"
   },
-  { "id": 410, "name": "Korea, Republic of", "alpha2": "kr", "alpha3": "kor" },
+  { "id": 410, "name": "Korea (South)", "alpha2": "kr", "alpha3": "kor" },
   { "id": 414, "name": "Kuwait", "alpha2": "kw", "alpha3": "kwt" },
   { "id": 417, "name": "Kyrgyzstan", "alpha2": "kg", "alpha3": "kgz" },
   {
@@ -255,7 +255,12 @@
     "alpha3": "mnp"
   },
   { "id": 578, "name": "Norway", "alpha2": "no", "alpha3": "nor" },
-  { "id": 275, "name": "occupied Palestinian territory", "alpha2": "ps", "alpha3": "pse" },
+  {
+    "id": 275,
+    "name": "occupied Palestinian territory",
+    "alpha2": "ps",
+    "alpha3": "pse"
+  },
   { "id": 512, "name": "Oman", "alpha2": "om", "alpha3": "omn" },
   { "id": 586, "name": "Pakistan", "alpha2": "pk", "alpha3": "pak" },
   { "id": 585, "name": "Palau", "alpha2": "pw", "alpha3": "plw" },

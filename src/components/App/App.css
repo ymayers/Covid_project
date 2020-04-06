@@ -1,71 +1,92 @@
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+.body {
+  background-color: #f2f2ee;
+  background-image: url(https://www.dinheirovivo.pt/wp-content/uploads/2020/03/Covid-19_AF.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90px;
+}
 .header-container {
-  padding-top: 2em;
+  padding-top: 0.5em;
   text-align: center;
 
-  background-color: slategray;
-  height: 6.5em;
-
+  height: 4em;
   width: 100%;
+  text-decoration: none;
 }
 
 .header {
+  text-decoration: none;
   margin-top: 0.25em;
   width: 100%;
   top: 0;
-  text-shadow: 2px brown;
+  text-shadow: 2px 1px black;
   height: 30%;
-  color: white;
+  color: whitesmoke;
   font-size: 2.5em;
   font-weight: bold;
   font-family: Special Elite, sans-serif;
 }
-.home-container {
-  margin-top: 1em;
+
+.header:hover {
+  color: transparent;
+  text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.534);
+}
+
+a {
+  text-decoration: none;
 }
 
 .footer {
+  color: white;
+  text-shadow: 1px 1px black;
   margin-top: 3px;
   padding-top: 0.25em;
   font-family: Special Elite, sans-serif;
   width: 100%;
-  color: whitesmoke;
   text-align: center;
-  background-image: linear-gradient(to bottom, white, slategray);
-  position: sticky;
   left: 0;
   bottom: 0;
   height: 2em;
 }
 
-nav {
-  margin-top: 0.5em;
-  font-size: 1em;
-  color: white;
-}
-
 .country-container {
   margin-top: 2em;
+  background-color: transparent;
 }
 
 .country {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
+  
 }
 /*refactor to .link and apply to all links*/
 .country-link {
+  padding: .5em;
+  text-align: center;
+  border-radius: 10em;
   text-decoration: none;
   color: black;
+  text-shadow: 1px 4.5px 2px rgb(35, 179, 236);
   margin: 0.3em;
   font-family: Special Elite, sans-serif;
+  background-color: rgba(35, 179, 236, 0.061);
+}
+.country-link:hover {
+  color: transparent;
+  text-shadow: 3px 3px rgba(177, 81, 86, 0.568);
 }
 
 .details-container {
   display: grid;
-  grid-template-columns: 33% 1fr 1fr;
+  grid-template-columns: 33% 1fr 2% 1fr;
   margin: 5em 0;
-  padding: 5em;
-  border: 1px solid slategray;
+  background-color: rgba(35, 179, 236, 0.109);
+}
+
+.details-confirmed {
+  align-self: center;
 }
 
 .section-container {
@@ -74,6 +95,31 @@ nav {
 .cdc {
   text-decoration: none;
   color: black;
+  text-align: center;
+}
+
+.divider {
+  text-align: center;
+  font-size: 10em;
+  font-weight: lighter;
+  color: white;
+  align-self: center;
+  text-shadow: 2px 2px slategray, -2px 2px slategray;
+}
+
+.sources {
+  justify-self: center;
+}
+
+.resource {
+  font-family: Special Elite, sans-serif;
+  color: darkslategray;
+  text-shadow: 2px 0.4px white;
+  font-size: 1.7em;
+}
+
+.resource_links {
+  display: grid;
 }
 
 /*For iPhone*/
@@ -95,7 +141,9 @@ nav {
   .country-link {
     font-size: 0.75em;
     margin: 0.5em;
+    font-weight: bolder;
   }
+
   .details-container {
     grid-template-columns: 1fr 1fr;
     padding: 5em 0;
@@ -105,10 +153,6 @@ nav {
   .section-container {
     margin: 0 auto;
   }
-  .footer {
-    position: fixed;
-  }
-
 }
 
 /*For iPad*/
@@ -120,9 +164,5 @@ nav {
   }
   .section-container {
     margin: 0 auto;
-  }
-
-  .footer {
-    position: fixed;
   }
 }

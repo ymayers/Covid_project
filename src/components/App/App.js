@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import Home from "./Home";
 import CountryDetails from "./CountryDetails";
 import name from "../../data/world.json";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class App extends React.Component {
@@ -23,7 +24,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="body">
         <Header />
         <main>
           <Route
@@ -34,7 +35,7 @@ class App extends React.Component {
             )}
           />
           <Route
-            path="/details/:idx"
+            path="/:idx"
             render={props => (
               <CountryDetails cases={this.state.countries} image={name} {...props} />
             )}

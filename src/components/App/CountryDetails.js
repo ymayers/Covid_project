@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Label from "../Label/Label";
 import Section from "../Section/Section";
-import { Link } from "react-router-dom";
 
 //displays number of covid-19 cases on separate page
 
@@ -31,6 +30,9 @@ class CountryDetails extends Component {
     const images = require.context(`../../data/flags-large`);
     const img = images(`./${countryCode.alpha2}.png`);
     const cdcUrl = `https://www.cdc.gov/coronavirus/2019-ncov/index.html`;
+    const whoUrl = `https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen`;
+    const nihUrl = `https://www.nih.gov/health-information/coronavirus`;
+
 
     return (
       <div className="details-container">
@@ -39,9 +41,10 @@ class CountryDetails extends Component {
             type="section1"
             label={countryInfo.Country}
             img={img}
-            alt="flag"
+            alt="flag" fluid
           />
         </div>
+
         <div className="details-confirmed">
           <Label
             type="arrow"
@@ -62,9 +65,21 @@ class CountryDetails extends Component {
             label="Total Deaths"
             info={<Section type="section3" label={countryInfo.TotalDeaths} />}
           />
+        </div>
+        <div className="divider">|</div>
+        <div className="sources">
+          <h2 className="resource">Other Resources</h2>
+          <div className="resource_links">
           <a className="cdc" href={cdcUrl}>
             {<Section type="section2" label="CDC" />}
           </a>
+          <a className="cdc" href={whoUrl}>
+            {<Section type="section2" label="WHO" />}
+          </a>
+          <a className="cdc" href={nihUrl}>
+            {<Section type="section2" label="NIH" />}
+            </a>
+            </div>
         </div>
       </div>
     );

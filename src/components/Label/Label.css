@@ -1,29 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 
-
-.summary {
+.arrow .summary {
   font-size: 1.5em;
   font-weight: bold;
   font-family: Special Elite, sans-serif;
   color: darkslategray;
+  text-shadow: 2px .4px white;
+  padding: 0.25em;
+  border-radius: 0.2em;
+  margin: 1em;
 }
 
-.arrow {
- 
-  margin: 1em;
-  padding: 1em;
+.arrow .summary::-webkit-details-marker {
+  color: darkslategray;
+  font-size: 1.5em;
   
-  
-}
+
+} 
 
 .arrow:hover {
   cursor: pointer;
 }
-.arrow-info{
+.arrow-info {
   font-size: 1em;
   font-weight: bold;
   font-family: Special Elite, sans-serif;
-  
 }
 
 .first {
@@ -34,15 +35,8 @@
 
 /*For iPhone*/
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-
-    .summary {
-      font-size: 1em;
-   
-    }
-    
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .summary {
+    font-size: 1em;
   }
-
+}
